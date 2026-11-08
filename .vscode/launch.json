@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug StockPortfolio (GDB / MinGW-w64)",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/StockPortfolio.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb.exe",
+            "preLaunchTask": "Build StockPortfolio GUI (MinGW-w64)"
+        }
+    ]
+}

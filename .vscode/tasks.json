@@ -1,0 +1,56 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build StockPortfolio GUI (MinGW-w64)",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-std=c17",
+                "-Wall",
+                "-Wextra",
+                "-g",
+                "-Iinclude",
+                "src/main.c",
+                "src/stock.c",
+                "src/transaction.c",
+                "src/portfolio.c",
+                "src/market_data.c",
+                "src/database.c",
+                "dsa/hashmap.c",
+                "dsa/avl_tree.c",
+                "dsa/linkedlist.c",
+                "dsa/stack.c",
+                "dsa/queue.c",
+                "dsa/heap.c",
+                "dsa/sorting.c",
+                "dsa/searching.c",
+                "dsa/graph.c",
+                "gui/dashboard.c",
+                "gui/holdings.c",
+                "gui/transactions.c",
+                "gui/watchlist.c",
+                "gui/analytics.c",
+                "gui/settings.c",
+                "-o",
+                "build/StockPortfolio.exe",
+                "-mwindows",
+                "-lcomctl32",
+                "-lgdi32",
+                "-luser32"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "label": "Run All Unit Tests (build.bat)",
+            "type": "shell",
+            "command": ".\\build.bat",
+            "group": "test",
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}

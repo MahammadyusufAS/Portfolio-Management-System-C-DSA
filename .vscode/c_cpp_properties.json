@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Win32-MinGW-w64",
+            "includePath": [
+                "${workspaceFolder}/include"
+            ],
+            "defines": [
+                "_WIN32",
+                "WIN32_LEAN_AND_MEAN"
+            ],
+            "compilerPath": "gcc.exe",
+            "cStandard": "c17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}
